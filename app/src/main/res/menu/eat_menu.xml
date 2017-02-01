@@ -1,0 +1,34 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools= "http://schemas.android.com/tools"
+    tools:context="bvgiants.diary3.EatActivity">
+
+
+    <!-- Settings, should always be in the overflow -->
+    <item android:id="@+id/action_home"
+        android:title="Home"
+        android:icon="@drawable/healthdiarylogo"
+        android:orderInCategory="100"
+        app:showAsAction="always"/>
+
+     <item android:id="@+id/action_settings"
+    android:title="@string/action_settings"
+    android:orderInCategory="100"
+    app:showAsAction="never"/>
+
+    <item android:id="@+id/action_dbload"
+        android:title="Load DB"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/action_dbdelete"
+        android:title="Delete DB"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/action_about"
+        android:title="About"
+        android:orderInCategory="300"
+        app:showAsAction="never"/>
+
+
+
+</menu>

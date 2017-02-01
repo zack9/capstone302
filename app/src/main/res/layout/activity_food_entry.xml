@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+    </android.support.design.widget.AppBarLayout>
+    <include layout="@layout/app_bar" />
+
+    <SearchView android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:id="@+id/search"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Food Consumed"
+        android:id="@+id/textView3"
+        android:layout_gravity="center_horizontal" />
+
+    <ListView android:id="@+id/list"
+    android:layout_width="fill_parent"
+    android:layout_height="500px"
+    android:transcriptMode="alwaysScroll"
+    android:cacheColorHint="#00000000"
+    android:listSelector="@android:color/transparent"/>
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:id="@+id/fragment"
+        android:name="bvgiants.diary3.ExpandableListFragment"
+        tools:layout="@layout/expandable_list" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Save to Diary"
+        android:id="@+id/save_to_diary"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/buttonchanges"
+        style="?android:textAppearanceSmall"
+        />
+
+
+
+</LinearLayout>

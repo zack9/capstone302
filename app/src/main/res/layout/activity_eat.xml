@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="bvgiants.diary3.EatActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/buttonToday"
+            android:background="@drawable/buttonchanges"
+            android:text="Today" />
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/buttonchanges"
+            android:id="@+id/buttonWeek"
+            android:text="Week" />
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/buttonchanges"
+            android:id="@+id/buttonMonth"
+            android:text="Month" />
+
+
+    </LinearLayout>
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+    </android.support.design.widget.AppBarLayout>
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="105dp"
+        android:layout_marginBottom="105dp"
+        android:id="@+id/fragmentEat"
+        android:name="bvgiants.diary3.ExpandableListFragmentEAT"
+        tools:layout="@layout/expandable_list" />
+
+    <include layout="@layout/app_bar" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonAddEntry"
+        android:textColor="#2f4f4f"
+        android:text="@string/add_entry_food"
+        android:background="@drawable/buttonchanges"
+        android:onClick="newEntry"
+        android:layout_alignBottom="@+id/fragmentEat"
+        android:layout_marginTop="500dp"
+        android:layout_alignParentEnd="true" />
+
+
+
+</android.support.design.widget.CoordinatorLayout>
+

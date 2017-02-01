@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="bvgiants.diary3.runActivity"
+    tools:showIn="@layout/activity_run"
+    android:contextClickable="false">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/default_value"
+        android:id="@+id/distanceCounterView"
+        android:textSize="30sp"
+        android:layout_marginTop="42dp"
+        android:layout_below="@+id/view3"
+        android:layout_alignStart="@+id/stepCounterView" />
+
+    <!-- Steps -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your current journey..."
+            android:id="@+id/haveWalked"
+            android:textSize="20sp"
+            android:layout_alignBottom="@+id/view5"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"/>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#212121"
+        android:layout_marginTop="130dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:id="@+id/view5">
+
+    </View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/default_value"
+            android:id="@+id/stepCounterView"
+            android:textSize="30sp"
+            android:layout_marginTop="170dp"
+            android:layout_marginLeft="30dp"
+             />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/step_suffix"
+            android:id="@+id/stepsSuffix"
+            android:textSize="30sp"
+            android:textStyle="italic"
+            android:layout_below="@+id/stepCounterView"
+            android:layout_alignStart="@+id/distanceSuffix" />
+
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/steps"
+        android:id="@+id/imageView4"
+        android:layout_alignTop="@+id/stepCounterView"
+        android:layout_alignEnd="@+id/haveWalked" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#42a5f5"
+        android:layout_marginTop="270dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:id="@+id/view3">
+
+    </View>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#42a5f5"
+        android:layout_marginTop="420dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:id="@+id/view4">
+
+    </View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:id="@+id/percentageCounterView"
+            android:textSize="30sp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="40dp"
+            android:layout_alignStart="@+id/distanceCounterView" />
+
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/distance_suffix"
+            android:id="@+id/distanceSuffix"
+            android:textSize="32sp"
+        android:textStyle="italic"
+        android:layout_alignBottom="@+id/imageView5"
+        android:layout_toStartOf="@+id/textView2" />
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/map"
+        android:layout_below="@+id/view3"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_marginTop="20dp"
+        android:id="@+id/imageView5" />
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="of your goal"
+    android:textSize="23sp"
+        android:id="@+id/textView2"
+        android:layout_alignBottom="@+id/percentageCounterView"
+        android:layout_alignStart="@+id/imageView4" />
+
+
+
+</RelativeLayout>
+
+
